@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="shortcut icon" href="svg/favicons.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../utlity.css" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+  </head>
+
+  <body>
+    <div class="container  flex bg-black">
+      <div class="left">
+        <div class="cross">
+          <img class="cross" src="svg/cross.svg" alt="" />
+        </div>
+        <div class="home bg-grey rounded m-1 p-1">
+          <div class="logo">
+            <img class="inverte" src="svg/img.svg" alt=" logo" />
+          </div>
+          <ul>
+            <!-- <li> <img onclick=`window.location.href= home.html` class="inverte" src="svg/home-svgrepo-com.svg" alt="home"> Home</li> -->
+            <li>
+              <a href="index.html">
+                <img
+                  class="inverte"
+                  src="svg/home-svgrepo-com.svg"
+                  alt="home"
+                />
+                Home
+              </a>
+            </li>
+
+            <li id="searchMenu">
+              <img
+                class="inverte"
+                src="svg/search-svgrepo-com.svg"
+                alt="search"
+              />
+              Search
+            </li>
+          </ul>
+          <div id="searchBox" style="display: none; margin: 10px">
+            <input type="text" id="searchInput" placeholder="Search songs..." />
+            <button id="searchButton">Search</button>
+          </div>
+        </div>
+        <div class="library bg-grey rounded m-1 p-1">
+          <div class="heading">
+            <img src="svg/library-.svg" class="inverte" alt="" />
+            <h4>Your library</h4>
+          </div>
+          <div class="songList">
+            <ul>
+              <!-- <li> 
+                            <img class="inverte" src="svg/music la.png" alt=" Music">
+                            <div class="info">
+                                <div>Song Name</div>
+                                <div>Alex</div>
+                            </div>
+                            <div class="playnow">
+
+                                <span>Play Now</span>
+                                <img src="svg/play.png" alt="" class="inverte">
+                            </div>
+
+
+                        </li> -->
+            </ul>
+          </div>
+        </div>
+        <div class="footer">
+          <div>
+            <a href="https://wwww.spotify.com/jp/legal/">
+              <spam>Legal</spam>
+            </a>
+          </div>
+          <div>
+            <a href="https://wwww.spotify.com/jp/privacy/">
+              <spam>Pravicy Center</spam>
+            </a>
+          </div>
+          <div>
+            <a href="https://wwww.spotify.com/jp/legal/privacy-policy/">
+              <spam>Privacy Policy</spam>
+            </a>
+          </div>
+          <div>
+            <a href="https://wwww.spotify.com/jp/legal/cookies-policy">
+              <spam>Cookies</spam>
+            </a>
+          </div>
+          <div>
+            <a href="/About/about.html">
+              <spam>About Us</spam>
+            </a>
+          </div>
+          <div>
+            <a href="https://wwww.spotify.com/jp/accessibility">
+              <spam>Accessibility</spam>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- </div> -->
+      <div class="right bg-grey rounded">
+        <div class="header rounded">
+          <div class="nav">
+            <div class="hamburgercont">
+              <img
+                class="hamburger"
+                width=" 40px"
+                src="svg/hamburger.svg"
+                alt=""
+              />
+            </div>
+            <div>
+              <img src="svg/left.svg" />
+              <img src="svg/right.svg" />
+            </div>
+          </div>
+
+          <div class="button">
+            <div class="button">
+              <button
+                class="signupbtn"
+                onclick="window.location.href='Sign Up/sign.html'"
+              >
+                Sign Up
+              </button>
+              <button
+                class="loginbtn"
+                onclick="window.location.href='login/login.html'">
+                Log In
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="spotifyplaylist">
+          <h1>Spotify Playlist</h1>
+          <div class="cardContainer">
+            <!-- <div  data-folder="cs" class="card">
+                        <div class="play">
+                            <svg id="playBtn" width="28" height="28" viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="48" fill="#1fdf64" class="play-button" />
+                                <polygon points="40,30 70,50 40,70" fill="dark" />
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67706f0000000249a1ed33d2ca64e6a5d0e550" alt="">
+                        <h2>Happy Hits</h2>
+                        <p> Hits to boost your mood and fill you with happiness!</p>
+
+                    </div>
+                    <div  data-folder="ncc" class="card">
+                        <div class="play">
+                            <svg id="playBtn" width="28" height="28" viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="48" fill="#1fdf64" class="play-button" />
+                                <polygon points="40,30 70,50 40,70" fill="dark" />
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67706f0000000249a1ed33d2ca64e6a5d0e550" alt="">
+                        <h2>Happy Hits</h2>
+                        <p> Hits to boost your mood and fill you with happiness!</p>
+
+                    </div> -->
+          </div>
+          <div class="playbar">
+            <div class="abovebar">
+              <div class="songinfo"></div>
+              <div class="songbtn">
+                <img id="previous" src="svg/prev.svg" alt="" />
+                <img id="play" src="svg/play.svg" alt="" />
+                <img id="next" src="svg/next.svg" alt="" />
+              </div>
+              <div class="timevol">
+                <div class="volume">
+                  <img id="full" width="25px" src="svg/full.svg" alt="" />
+                  <img width="25px" src="svg/volume.svg" alt="" />
+                  <div class="range">
+                    <input type="range" name="volume" id="" />
+                  </div>
+                </div>
+                <div class="songtime"></div>
+              </div>
+              <div class="seekbar">
+                <div class="circle"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Optional, if you want to have a placeholder -->
+      <div class="song-details-panel">
+        <div class="play">
+          <svg id="playBtn" width="28" height="28" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="48" fill="#1fdf64" class="play-button" />
+            <polygon points="40,30 70,50 40,70" fill="dark" />
+          </svg>
+        </div>
+        <img src="/music/ncc/cover.jpeg" alt="" />
+
+        <h2>${fileName}</h2>
+
+        <source src="${folderPath}${file}" type="audio/mpeg" />
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="search.js"></script>
+  </body>
+</html>

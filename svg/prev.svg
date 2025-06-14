@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
+  <!-- Black circle background -->
+  <circle cx="12" cy="12" r="10" fill="black" />
+  <!-- White previous icon: two triangles pointing left -->
+  <polygon points="13,8 13,16 7,12" fill="white" />
+  <rect x="14" y="8" width="2" height="8" fill="white" />
+</svg>

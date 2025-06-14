@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .logContainer {
+    width: 50vw;
+    margin: 70px auto;
+    display: flex;
+    height: 92vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #121212;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+  }
+  .linkButton {
+    margin: 30px auto 10px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+  .linkButton button > img {
+    width: 19px;
+    height: 19px;
+    border-radius: 10px;
+  }
+  
+  .contu {
+    background-color: #1ed760;
+    border-radius: 23px;
+    padding: 13px 30px;
+    cursor: pointer;
+    font-weight: bolder;
+    width: 317px;
+    border: 1px solid grey;
+  }
+  .contu:hover {
+    background-color: #1ed760;
+    width:323px;
+    
+    border: 2px solid #1ed760;
+  }
+  
+  .spera {
+    height: 2px;
+    width: 40%;
+    background-color: grey;
+  }
+  .separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #888;
+    margin: 20px 0;
+    width: 60%;
+  }
+  
+  .separator::before,
+  .separator::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #ccc;
+    margin: 0 10px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    width: 324px;
+  
+  }
+  .form-group button {
+    margin:  20px 0  0   0  ;
+  }
+  .form-group input {
+    border: 1px solid grey;
+    border-radius: 8px;
+    background-color: black;
+    color: white;
+    padding: 10px 7px;
+    outline: none;     
+  }
+  .form-group input:hover {
+           
+    border: 2px solid white;
+  }
+  .form-group label {
+  
+    margin: 7px 4px 1px 4px;
+  
+  }
+  .cross{
+    position: absolute;
+    right:12px;
+    top:12px;
+    cursor: pointer;
+}
+  
+  .logbtn {
+    gap: 22px;
+    background: black;
+    color: white;
+    border-radius: 23px;
+    border: 1px solid grey;
+    padding: 13px 31px;
+    width: 324px;
+    height: 48px;
+    display: grid;
+    font-size: 1rem;
+    grid-template-columns: 0.5fr 4fr;
+  
+    cursor: pointer;
+  }
+  .logbtn:hover {
+    border: 2px solid white;
+  }
+  .logContainer p {
+    color: white;
+    margin: 10px 0;
+  
+  }
+  .logContainer p a {
+    color: white;
+  }
+  .logContainer p a:hover {
+    color: green;
+  }
+
+  @media (max-width: 700px) {
+    .logContainer {
+      width: 100vw;
+      height: 100vh;
+      margin: 0;
+    }
+  }
+  

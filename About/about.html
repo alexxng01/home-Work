@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - Spotify Clone/about</title>
+  <link rel="shortcut icon" href="/../svg/favicons.svg" type="image/x-icon" />
+  <link rel="stylesheet" href="about.css" />
+  <link rel="stylesheet" href="../utlity.css">
+</head>
+
+<body>
+  <div class="container flex bg-black">
+    <!-- Sidebar -->
+    <div class="left">
+      <div class="cross">
+        <img class="cross" src="../svg/cross.svg" alt="Close Menu" />
+      </div>
+      <div class="home bg-grey rounded m-1 p-1">
+        <div class="logo">
+          <img class="inverte" src="../svg/img.svg" alt="Logo" />
+        </div>
+        <ul>
+          <li><a href="../index.html"><img class="inverte" src="../svg/home-svgrepo-com.svg" alt="Home" /> Home</a></li>
+          <li id="searchMenu">
+            <div id="searchBox" style="display:none; margin: 10px;">
+              <input type="text" id="searchInput" placeholder="Search songs..." />
+              <button id="searchButton">Search</button>
+            </div>
+            <span id="searchIcon">
+              <img class="inverte" src="../svg/search-svgrepo-com.svg" alt="search"> Search
+            </span>
+          </li>
+        </ul>
+      </div>
+      <!-- <div data-folder="cs" class="cards card">
+        <div class="play">
+          <svg id="playBtn" width="28" height="28" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="48" fill="#1fdf64" class="play-button" />
+            <polygon points="40,30 70,50 40,70" fill="dark" />
+          </svg>
+        </div>
+        <img src="https://i.scdn.co/image/ab67706f0000000249a1ed33d2ca64e6a5d0e550" alt="">
+        <h2>Happy Hits</h2>
+        <p> Hits to boost your mood and fill you with happiness!</p>
+        
+      </div> -->
+      
+      <div class="library bg-grey  rounded m-1 p-1">
+        <div class="heading">
+          <img src="../svg/library-.svg" class="inverte" alt="">
+          <h4>
+            Your library
+          </h4>
+          
+        </div>
+        <div class="songList">
+          <ul>
+            <!-- <li> 
+              <img class="inverte" src="svg/music la.png" alt=" Music">
+              <div class="info">
+                <div>Song Name</div>
+                <div>Alex</div>
+              </div>
+              <div class="playnow">
+                
+                <span>Play Now</span>
+                <img src="svg/play.png" alt="" class="inverte">
+              </div>
+              
+              
+            </li> -->
+          </ul>
+        </div>
+      </div>
+      
+      
+      
+      
+      
+      
+      <div class="footer rounded m-1 p-1">
+        <div><a href="#">
+          <spam>Legal</spam>
+        </a></div>
+        <div><a href="#">
+          <spam>Privacy</spam>
+        </a></div>
+      
+        <div><a href="#">
+            <spam>Cookies</spam>
+          </a></div>
+       
+        <div><a href="#">
+            <spam>Accessibility</spam>
+          </a></div>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="right bg-grey rounded">
+      <div class="header rounded">
+        <div class="nav">
+          <div class="hamburgercont">
+            <img class=" hamburgerer" width=" 40px" src="../svg/hamburger.svg" alt="">
+          </div>
+          <div>
+            <img src="../svg/left.svg" />
+            <img src="../svg/right.svg" />
+          </div>
+        </div>
+        <div class="button">
+          <button class="signupbtn" onclick="window.location.href='../../Sign Up/sign.html'">Sign Up</button>
+          <button class="loginbtn" onclick="window.location.href='../../login/login.html'">Log In</button>
+
+        </div>
+      </div>
+
+      <div class="spotifyplaylist">
+        <h1>About Us</h1>
+        <div class="cardContainer">
+          <div class="about-text bg-black rounded p-2">
+            <p>
+              Welcome to our Spotify-inspired music player! This project was built with the goal of learning how to
+              design
+              and develop a modern web interface using HTML, CSS, and JavaScript.
+            </p>
+            <br />
+            <p>
+              Here, you can explore playlists, search for songs, and enjoy a sleek user experience modeled after
+              Spotify.
+              This project is for educational purposes only and is not affiliated with Spotify.
+            </p>
+            <br />
+            <p><strong>Created by:</strong> Alex</p>
+            <p><strong>Technologies used:</strong> HTML, CSS, JavaScript</p>
+          </div>
+        </div>
+      </div>
+      <div class="playbar">
+
+
+
+        <div class="abovebar">
+          <div class="songinfo">
+
+          </div>
+          <div class="songbtn">
+            <img id="previous" src="../svg/prev.svg" alt="">
+            <img id="play" src="../svg/play.svg" alt="">
+            <img id="next" src="../svg/next.svg" alt="">
+          </div>
+          <div class="timevol">
+
+
+            <div class="volume">
+              <img width="25px" src="../svg/volume.svg" alt="">
+              <div class="range">
+                <input type="range" name="volume" id="">
+              </div>
+            </div>
+            <div class="songtime">
+
+            </div>
+          </div>
+          <div class="seekbar">
+            <div class="circle">
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <script src="about.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+.song-details-panel {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 28vw;
+    background-color: #181818;
+    color: white;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: -2px 0 8px rgba(0,0,0,0.5);
+    z-index: 1000;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  .song-details-panel.active {
+    display: flex;
+  }
+  .song-details-panel img {
+    max-width: 80%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  .song-details-panel h2 {
+    margin-bottom: 10px;
+  }
+  .song-details-panel audio {
+    width: 90%;
+  }
+  .song-details-panel #closeFullscreen {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
